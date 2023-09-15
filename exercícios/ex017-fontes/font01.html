@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas absolutas: cm, mm, in, px, pt, pc
+
+            Medidas Relativas: em, ex, rem, vw, bh, %
+
+            16px geralmente = 1em
+            */
+            font-size: 1em;
+        }
+
+        h1{
+            /* shorthand
+            - font-style -> font-weight -> font-size -> font-family 
+            
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic; */
+            font: italic bolder 3em arial, helvetica, sans-serif;
+        }
+
+        h2{
+            font: bold 2em arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, voluptate voluptas quos corporis aperiam in modi earum assumenda ea asperiores corrupti a! Perferendis, voluptatem voluptate eos obcaecati unde placeat quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptas nesciunt voluptatibus excepturi vel dolorem distinctio odio molestias similique rem, aut ex, ad ipsam amet blanditiis eius sapiente perferendis! Recusandae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe modi error ab aliquid officiis at rem sequi in repudiandae eveniet. Impedit harum nobis nulla sed. Doloremque, sunt dolore! Quidem, eligendi.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus fugiat, labore repudiandae debitis aspernatur dolore deleniti praesentium magnam recusandae laudantium magni, commodi veniam numquam iste neque, sit nemo accusantium laborum?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ea placeat beatae, cum cumque eos perspiciatis laudantium inventore maxime consectetur vel adipisci vero quis, velit, eius fuga. Laborum, aperiam vitae?</p>
+</body>
+</html>
