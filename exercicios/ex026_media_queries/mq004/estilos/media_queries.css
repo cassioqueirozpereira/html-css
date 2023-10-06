@@ -13,7 +13,29 @@
 */
 
 @media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
 
+    body {
+        background-image: url(../imagens/back-print.jpg); /* Impressora não imprimi background, então é desnecessário */
+        border: 2px solid black;
+        height: 100%;
+    }
+
+    h1 {
+        text-shadow: none;
+        color: black;
+        padding-bottom: 100px;
+    }
+
+    h6 {
+        font-size: .5em;
+        text-align: center;
+        padding-top: 630px;
+    }
+    img.phone { display: none;}
+    img.print { display: block;}
 }
 
 @media screen and (min-width: 481px) and (max-width:767px) {
@@ -23,10 +45,6 @@
     }
     img.phone { display: none;}
     img.phone_deitado { display: block;}
-    img.tablet { display: none;}
-    img.print { display: none;}
-    img.pc { display: none;}
-    img.tv { display: none;}
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -35,11 +53,7 @@
         background-position: center center;
     }
     img.phone { display: none;}
-    img.phone_deitado { display: none;}
     img.tablet { display: block;}
-    img.print { display: none;}
-    img.pc { display: none;}
-    img.tv { display: none;}
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -48,11 +62,7 @@
         background-position: center center;
     }
     img.phone { display: none;}
-    img.phone_deitado { display: none;}
-    img.tablet { display: none;}
-    img.print { display: none;}
     img.pc { display: block;}
-    img.tv { display: none;}
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1919px) {
@@ -60,10 +70,7 @@
         background-image: url(../imagens/back-tv.jpg);
         background-position: center center;
     }
-    img.phone { display: none;}
-    img.phone_deitado { display: none;}
-    img.tablet { display: none;}
-    img.print { display: none;}
-    img.pc { display: none;}
+    
     img.tv { display: block;}
+    img.phone { display: none;}
 }
