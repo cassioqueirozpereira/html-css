@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media_query.css">
+</head>
+<body onresize="mudou_tamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" class="material-icons" onclick="click_menu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Filme</a></li>
+                <li><a href="#">Imagem</a></li>
+                <li><a href="#">Música</a></li>
+                <li><a href="#">Deus</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat dolorem quos excepturi, id vel in neque enim sint corrupti dolor, quo, non voluptas velit ratione animi obcaecati accusamus nobis temporibus?</p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repudiandae omnis deleniti nihil asperiores quae, in magnam voluptas minima sed impedit quas, exercitationem dicta nesciunt libero doloremque sequi distinctio molestias natus. Id perspiciatis iusto at incidunt aliquid repellat aliquam odit officia exercitationem culpa reiciendis ipsum quam veniam ut quibusdam maiores, praesentium, quisquam repudiandae ad beatae! Exercitationem nobis ducimus incidunt natus explicabo. Libero aliquid ducimus possimus obcaecati, ex voluptatibus magnam nemo odit culpa facilis adipisci a accusamus cum sunt nam unde alias ullam repudiandae amet recusandae magni. Iste adipisci accusamus molestiae, aliquid quidem voluptatem voluptatibus officia sunt labore. Reprehenderit, architecto sint.
+            </p>
+
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quia labore quas aliquid rerum vel suscipit assumenda distinctio nobis. Suscipit perspiciatis optio velit quod culpa neque. Eius vero qui et tempore repudiandae, hic quod temporibus natus, minus eaque voluptates optio voluptatem culpa nemo recusandae dolorum minima facilis saepe ipsam odit?
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit expedita fugiat ipsa aspernatur asperiores perferendis tenetur corrupti facere inventore maxime, placeat molestiae quidem, nemo est quaerat culpa, numquam pariatur fugit similique? Laboriosam natus ea officiis culpa minus possimus. Obcaecati quas nulla officiis aspernatur exercitationem. Nihil odit soluta voluptate officiis, laudantium doloremque iste quisquam nulla dicta obcaecati a provident quos aperiam!
+            </p>
+        </article>
+    </main>
+    <script>
+        function mudou_tamanho() {
+            if (window.innerWidth >= 768)
+                itens.style.display = "block"
+            else
+                itens.style.display = "none"
+        }
+
+        function click_menu() {
+            if (itens.style.display == "block")
+                itens.style.display = "none"
+            else
+                itens.style.display = "block"
+        }
+    </script>
+</body>
+</html>
